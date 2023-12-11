@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header__logo logo">
+        <a href="index.html">
+          <svg class="logo__svg">
+            <use xlink:href="assets/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="#favoriteCoffee">Favorite coffee</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="#about">About</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="#mobileApp">Mobile app</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="#footer">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__menu-wrap">
+        <a class="main-header__link main-header__menu-link" href="catalog.html">
+          Menu
+          <svg class="main-header__menu-svg">
+            <use xlink:href="assets/sprite.svg#coffeeCup"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="main-header__burger-menu">
+      </button>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="container">
+      <div class="intro__content-wrapper">
+        <div class="intro__content">
+          <div class="intro__offer">
+            <h1 class="intro__title">
+              <span class="intro__title-accent">Enjoy</span> premium coffee at our charming cafe
+            </h1>
+            <p class="intro__text">
+              With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
+            </p>
+            <a href="catalog.html" class="intro__button">
+              <span class="intro__button-text">Menu</span>
+              <div class="intro__button-svg-wrap">
+                <svg class="intro__menu-svg">
+                  <use xlink:href="assets/sprite.svg#coffeeCup"></use>
+                </svg>
+              </div>
+            </a>
+            <div class="intro__video-wrapper">
+              <video class="intro__video" muted loop autoplay src="./assets/intro-video.webm"> </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="favorite-coffee" id="favoriteCoffee">
+    <div class="container">
+      <h2 class="favorite-coffee__title sub-title">
+        Choose your <span class="sub-title__accent">favorite</span> coffee
+      </h2>
+      <div class="favorite-coffee__slider">
+        <div class="favorite-coffee__slider-up">
+          <button class="favorite-coffee__arrow favorite-coffee__arrow--left">
+            <svg class="favorite-coffee__arrow-svg">
+              <use xlink:href="assets/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="favorite-coffee__arrow favorite-coffee__arrow--right">
+            <svg class="favorite-coffee__arrow-svg">
+              <use xlink:href="assets/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="favorite-coffee__slider-wrapper">
+            <div class="favorite-coffee__slider-carousel">
+              <div class="favorite-coffee__slider-element" id="slide-back">
+                <img class="favorite-coffee__slider-img" width="480" height="480" src="assets/images/coffee-slider-3.png" alt="Ice coffee">
+                <h3 class="favorite-coffee__slider-title">
+                  Ice coffee
+                </h3>
+                <p class="favorite-coffee__slider-text">
+                  A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+                </p>
+                <p class="favorite-coffee__price">
+                  $4.50
+                </p>
+              </div>
+              <div class="favorite-coffee__slider-element" id="slide-active">
+                <img class="favorite-coffee__slider-img" width="480" height="480" src="assets/images/coffee-slider-1.png" alt="S’mores Frappuccino">
+                <h3 class="favorite-coffee__slider-title">
+                  S’mores Frappuccino
+                </h3>
+                <p class="favorite-coffee__slider-text">
+                  This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.
+                </p>
+                <p class="favorite-coffee__price">
+                  $5.50
+                </p>
+              </div>
+              <div class="favorite-coffee__slider-element" id="slide-next">
+                <img class="favorite-coffee__slider-img" width="480" height="480" src="assets/images/coffee-slider-2.png" alt="Caramel Macchiato">
+                <h3 class="favorite-coffee__slider-title">
+                  Caramel Macchiato
+                </h3>
+                <p class="favorite-coffee__slider-text">
+                  Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.
+                </p>
+                <p class="favorite-coffee__price">
+                  $5.00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="favorite-coffee__pagination">
+          <li class="favorite-coffee__pagination-item"></li>
+          <li class="favorite-coffee__pagination-item"></li>
+          <li class="favorite-coffee__pagination-item"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="about__title sub-title">
+        Resource is <span class="sub-title__accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
+      </h2>
+      <div class="about__images-list">
+        <div class="about__images-list-left">
+          <div class="about__images-item">
+            <img src="assets/images/about-1.jpg" alt="about-1" class="about__images-img">
+          </div>
+          <div class="about__images-item">
+            <img src="assets/images/about-2.jpg" alt="about-2" class="about__images-img">
+          </div>
+        </div>
+        <div class="about__images-list-right">
+          <div class="about__images-item">
+            <img src="assets/images/about-3.jpg" alt="about-3" class="about__images-img">
+          </div>
+          <div class="about__images-item">
+            <img src="assets/images/about-4.jpg" alt="about-4" class="about__images-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mobile-app" id="mobileApp">
+    <div class="container">
+      <div class="mobile-app__offer">
+        <h2 class="mobile-app__title sub-title">
+          <span class="sub-title__accent">Download</span> our apps to start ordering
+        </h2>
+        <p class="mobile-app__text">
+          Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are
+        </p>
+        <div class="mobile-app__links">
+          <a class="mobile-app__link" href="#">
+            <svg class="mobile-app__link-svg">
+              <use xlink:href="assets/sprite.svg#apple"></use>
+            </svg>
+            <p class="mobile-app__link-text">
+              Available on the <span class="mobile-app__link-accent">App Store</span>
+            </p>
+          </a>
+          <a class="mobile-app__link" href="#">
+            <svg class="mobile-app__link-svg">
+              <use xlink:href="assets/sprite.svg#googlePlay"></use>
+            </svg>
+            <p class="mobile-app__link-text">
+              Available on <span class="mobile-app__link-accent">Google Play</span>
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-app__image-wrap">
+        <img src="assets/images/mobile-screens.png" width="630" height="630" alt="mobile screens">
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer" id="footer">
+    <div class="container">
+      <div class="main-footer__content">
+        <div class="main-footer__social">
+          <h2 class="main-footer__title sub-title">
+            Sip, Savor, Smile. <span class="main-footer__title-accent">It’s coffee time!</span>
+          </h2>
+          <ul class="main-footer__social-list">
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__contact">
+          <h3 class="main-footer__sub-title">
+            Contact us
+          </h3>
+          <ul class="main-footer__contact-list">
+            <li class="main-footer__contact-item">
+              <a class="main-footer__contact-text main-footer__contact-link" href="https://maps.app.goo.gl/tdWucPNsoAkwqhiL9">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#pin"></use>
+                </svg>
+                8558 Green Rd.,&nbsp;  LA
+              </a>
+            </li>
+            <li class="main-footer__contact-item">
+              <a class="main-footer__contact-text main-footer__contact-link" href="tel:+16035550123">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#phone"></use>
+                </svg>
+                +1 (603) 555-0123
+              </a>
+            </li>
+            <li class="main-footer__contact-item">
+              <p class="main-footer__contact-text">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#clock"></use>
+                </svg>
+                Mon-Sat: 9:00 AM – 23:00 PM
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/slider.js"></script>
+</body>
+</html>

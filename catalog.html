@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <svg class="logo__svg">
+            <use xlink:href="assets/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="index.html#favoriteCoffee">Favorite coffee</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="index.html#about">About</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="index.html#mobileApp">Mobile app</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__link" href="#footer">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-header__menu-wrap">
+        <a class="main-header__link main-header__menu-link main-header__link--active">
+          Menu
+          <svg class="main-header__menu-svg">
+            <use xlink:href="assets/sprite.svg#coffeeCup"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="main-header__burger-menu">
+      </button>
+    </div>
+  </header>
+  <section class="catalog">
+    <div class="container">
+      <h1 class="catalog__title sub-title">
+        Behind each of our cups hides an <span class="sub-title__accent">amazing surprise</span>
+      </h1>
+      <ul class="catalog__choice-list">
+        <li class="catalog__choice-item">
+          <button disabled class="catalog__choice-button catalog__choice-button--active">
+            Coffee
+          </button>
+        </li>
+        <li class="catalog__choice-item">
+          <button class="catalog__choice-button">
+            Tea
+          </button>
+        </li>
+        <li class="catalog__choice-item">
+          <button class="catalog__choice-button">
+            Dessert
+          </button>
+        </li>
+      </ul>
+      <ul class="catalog__product-list catalog__product-list--hidden">
+      </ul>
+      <button class="catalog__product-button">
+        <svg class="catalog__product-button-svg">
+          <use xlink:href="assets/sprite.svg#refresh"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <footer class="main-footer" id="footer">
+    <div class="container">
+      <div class="main-footer__content">
+        <div class="main-footer__social">
+          <h2 class="main-footer__title sub-title">
+            Sip, Savor, Smile. <span class="main-footer__title-accent">It’s coffee time!</span>
+          </h2>
+          <ul class="main-footer__social-list">
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a href="#" class="main-footer__social-link">
+                <svg class="main-footer__social-svg">
+                  <use xlink:href="assets/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__contact">
+          <h3 class="main-footer__sub-title">
+            Contact us
+          </h3>
+          <ul class="main-footer__contact-list">
+            <li class="main-footer__contact-item">
+              <a class="main-footer__contact-text main-footer__contact-link" href="https://maps.app.goo.gl/tdWucPNsoAkwqhiL9">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#pin"></use>
+                </svg>
+                8558 Green Rd.,&nbsp;  LA
+              </a>
+            </li>
+            <li class="main-footer__contact-item">
+              <a class="main-footer__contact-text main-footer__contact-link" href="tel:+16035550123">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#phone"></use>
+                </svg>
+                +1 (603) 555-0123
+              </a>
+            </li>
+            <li class="main-footer__contact-item">
+              <p class="main-footer__contact-text">
+                <svg class="main-footer__contact-svg">
+                  <use xlink:href="assets/sprite.svg#clock"></use>
+                </svg>
+                Mon-Sat: 9:00 AM – 23:00 PM
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/catalog.js"></script>
+</body>
+</html>
